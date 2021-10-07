@@ -36,9 +36,10 @@
   analytics.page();
   }}();
 
-  function trackInteraction(detail) {
+  function trackInteraction(detail,message) {
   analytics.track('Feedback Given', {
-    emoji: detail
+    emoji: detail,
+    cont: message
   });
   } 
 </script>
@@ -47,26 +48,26 @@
   <table align="center">
     <tr>
       <td>
-        <h1 onclick="trackInteraction('👋')">👋</h1>
+        <h1 onclick="trackInteraction('👋','ahoy!')">👋</h1>
       </td>
       <td>
-        <h1 onclick="trackInteraction('🤩')">🤩</h1>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <h1 onclick="trackInteraction('🤯')">🤯</h1>
-      </td>
-      <td>
-        <h1 onclick="trackInteraction('👏')">👏</h1>
+        <h1 onclick="trackInteraction('🤩','this is incredible!')">🤩</h1>
       </td>
     </tr>
     <tr>
       <td>
-        <h1 onclick="trackInteraction('🔥')">🔥</h1>
+        <h1 onclick="trackInteraction('🤯','I cant believe what Im seeing!')">🤯</h1>
       </td>
       <td>
-        <h1 onclick="trackInteraction('🤣')">🤣</h1>
+        <h1 onclick="trackInteraction('👏','very nice.')">👏</h1>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h1 onclick="trackInteraction('🔥','this is UNBELIEVABLE.')">🔥</h1>
+      </td>
+      <td>
+        <h1 onclick="trackInteraction('🤣','that was HILARIOUS!')">🤣</h1>
       </td>
     </tr>
   </table>
