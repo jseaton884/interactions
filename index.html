@@ -3,6 +3,7 @@
 <head> 
 <title>Interactive Page</title> 
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style type="text/css">
   table {
     width: 90%;
@@ -13,10 +14,14 @@
       font-size: 8em;
   }
   h1:active {
-      transform: scale(1.5,1.5);
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5);
   }
   h1:focus {
-      transform: scale(1.5,1.5);
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5);
   }
   td {
     text-align: center;
@@ -37,7 +42,7 @@
   } 
 </script>
 </head> 
-<body>
+<body ontouchstart="">
   <table align="center">
     <tr>
       <td>
